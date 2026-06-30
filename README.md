@@ -72,8 +72,6 @@ To prevent broken icons or missing text blocks (tofu boxes) in Waybar, Rofi, and
 
 You can install all the required packages at once using `pacman` and an AUR helper like `yay` or `paru`:
 ```bash
-```
-```bash
 # 1. Install official repository dependencies
 sudo pacman -S hyprland waybar neovim kitty git \
   hyprpaper hyprlock hyprshot hyprsunset swaync \
