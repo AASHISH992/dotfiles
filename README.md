@@ -7,8 +7,8 @@ Welcome to my personal dotfiles repository! This repository contains my custom c
 
   <img src="screenshots/home.png" alt="Hyprland Desktop Setup Home" width="600">
   <img src="screenshots/rofi.png" alt="Hyprland Desktop Setup Rofi" width="600">
-  <img src="screenshots/terminal" alt="Hyprland Desktop Setup terminal" width="600">
-  <img src="screenshots/powermenu" alt="Hyprland Desktop Setup powermenu" width="600">
+  <img src="screenshots/terminal.png" alt="Hyprland Desktop Setup terminal" width="600">
+  <img src="screenshots/powermenu.png" alt="Hyprland Desktop Setup powermenu" width="600">
 
 </p>
 
