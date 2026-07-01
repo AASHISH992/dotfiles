@@ -224,7 +224,7 @@ hl.config({
 hl.config({
 	input = {
 		kb_layout = "us",
-		kb_variant = "",
+		kb_variant = "dvp",
 		kb_model = "",
 		kb_options = "",
 		kb_rules = "",
@@ -312,10 +312,22 @@ hl.bind("SUPER +SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
+--for i = 1, 10 do
+--	local key = i % 10 -- 10 maps to key 0
+--	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+--	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+--end
+
 for i = 1, 10 do
-	local key = i % 10 -- 10 maps to key 0
-	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
-	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+	-- Linux keycodes for 1 through 9 are 10-18; keycode 19 is the '0' key
+	local keycode = (i == 10) and 19 or (9 + i)
+	local keyStr = "code:" .. keycode
+
+	-- 1. Switch workspace (e.g., "SUPER + code:10")
+	hl.bind(mainMod .. " + " .. keyStr, hl.dsp.focus({ workspace = i }))
+
+	-- 2. Move window to workspace (e.g., "SUPER + SHIFT + code:10")
+	hl.bind(mainMod .. " + SHIFT + " .. keyStr, hl.dsp.window.move({ workspace = i }))
 end
 
 -- Example special workspace (scratchpad)

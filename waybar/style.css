@@ -42,37 +42,6 @@ window#waybar.chromium {
 }
 
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-/*button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
-}*/
-
-/* you can set a style on hover for any module like this */
-
-/*#workspaces button {
-    background-color: transparent;
-    color: #ffffff;
-}*/
-
-/*#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-} */
-
-/*#workspaces button.focused, #workspaces button.active {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}*/
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-/*#mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}*/
-
 #clock,
 #battery,
 #cpu,
@@ -221,21 +190,11 @@ label:focus {
     min-width: 100px;
 }
 
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
 }
 
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
 
 #tray {
     background-color: #2980b9;
@@ -286,7 +245,7 @@ label:focus {
 
 #keyboard-state {
     background: #97e1ad;
-    color: #000000;
+    color: #ffffff;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
@@ -342,7 +301,7 @@ label:focus {
     background-color: transparent;
     color : #0a0a0a;
     font-family: "Feather"; /* Ensures the glyph renders */
-    font-size: 21pt;        
+    font-size: 20pt;        
     padding: 0;
     margin: 0;
 }

@@ -1,11 +1,11 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": "26pt", // Waybar height (to be removed for auto height)
+    //"layer": "top", // Waybar at top layer
+    //"position": "top", // Waybar position (top|bottom|left|right)
+    "height": "30pt", // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
 //    "spacing": 4, // Gaps between modules (4px)
-    "fixed-center": true,
+//    "fixed-center": true,
     "custom/decor1": {
       "format": "",
       "tooltip": false
@@ -30,9 +30,6 @@
         "custom/decor2",
         "hyprland/workspaces",
         "custom/decor1"
-  //      "sway/mode",
-//        "sway/scratchpad",
-//        "custom/media"
     ],
 
     "modules-center": [
@@ -60,11 +57,11 @@
         "custom/power"
     ],
 
-    "hyprland/window": {
-        "format": "{}",
-        "max-length": 35,
-        "separate-outputs" : true/* <--- PREVENTS SQUISHING OTHERS WHEN TITLES GET LONG */
-    },
+   // "hyprland/window": {
+   //     "format": "{}",
+   //     "max-length": 35,
+   //     "separate-outputs" : true/* <--- PREVENTS SQUISHING OTHERS WHEN TITLES GET LONG */
+   // },
 
     // Modules configuration
     "hyprland/workspaces": {
